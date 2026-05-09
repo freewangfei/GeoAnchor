@@ -1,0 +1,27 @@
+{
+  "source": "F3 minimal sparse-well adaptation from SEGY + porosity logs",
+  "n_samples": 8,
+  "wells": [
+    "F02-1",
+    "F03-2",
+    "F03-4",
+    "F06-1"
+  ],
+  "split_by_well": {
+    "train": [
+      "F02-1",
+      "F03-2"
+    ],
+    "val": [
+      "F03-4"
+    ],
+    "test": [
+      "F06-1"
+    ]
+  },
+  "note": "This is a minimal OpendTect-free adaptation that uses sparse well supervision masks.",
+  "includes_prior": true,
+  "prior_definition": "Sparse-well low-frequency porosity trend estimated by weighted Gaussian smoothing and preserved at observed well samples.",
+  "uses_observed_eval_split": true,
+  "observed_stride": 3
+}

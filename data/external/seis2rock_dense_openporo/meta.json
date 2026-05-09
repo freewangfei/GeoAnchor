@@ -1,0 +1,7 @@
+{
+  "source": "/opt/code/open_poro_final_bundle/data/external/seis2rock_partial/Seis2Rock-main/data/smeaheia_synthetic.npz",
+  "note": "Dense-label auxiliary benchmark derived from the open Seis2Rock Smeaheia synthetic property panel.",
+  "n_train": 36,
+  "n_val": 10,
+  "n_test": 10
+}

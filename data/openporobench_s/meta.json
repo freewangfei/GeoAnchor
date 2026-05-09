@@ -1,0 +1,10 @@
+{
+  "height": 64,
+  "width": 96,
+  "train_size": 72,
+  "val_size": 16,
+  "test_size": 20,
+  "seed": 20260307,
+  "noise_std": 0.03,
+  "version": "OpenPoroBench-S-v1"
+}

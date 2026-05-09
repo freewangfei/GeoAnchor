@@ -1,0 +1,14 @@
+{
+  "source": "/opt/code/open_poro_final_bundle/data/external/seis2rock_partial/Seis2Rock-main/data/smeaheia_synthetic.npz",
+  "note": "Auxiliary open benchmark built from Seis2Rock Smeaheia synthetic property fields under a blind-well style protocol.",
+  "n_train": 36,
+  "n_val": 10,
+  "n_test": 10,
+  "shape": [
+    1,
+    64,
+    48
+  ],
+  "supervision_protocol": "Disjoint depth intervals on the same sparse-well columns.",
+  "prior_protocol": "Prior is calibrated on training windows only from smoothed SW/VSH proxy features."
+}
