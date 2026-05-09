@@ -1,3 +1,14 @@
-numpy
-scikit-image
-torch
+# Python >= 3.10 is recommended.
+#
+# The code was checked in the following environment:
+#   numpy==1.26.4
+#   scikit-image==0.26.0
+#   torch==2.11.0+cu128
+#
+# For GPU runs, install the PyTorch build that matches your CUDA driver.
+# Example for CUDA 12.8:
+#   pip install --index-url https://download.pytorch.org/whl/cu128 torch==2.11.0
+
+numpy==1.26.4
+scikit-image==0.26.0
+torch==2.11.0

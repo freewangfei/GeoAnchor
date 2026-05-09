@@ -115,7 +115,7 @@ cd GeoAnchor_code
 pip install -r requirements.txt
 ```
 
-The scripts use CUDA when available. If CUDA is not available, use `--device cpu`.
+The scripts use CUDA when available. If CUDA is not available, use `--device cpu`. For GPU runs, install the PyTorch build that matches the local CUDA driver. The code was checked with `torch==2.11.0+cu128`, `numpy==1.26.4`, and `scikit-image==0.26.0`.
 
 ## Train
 
