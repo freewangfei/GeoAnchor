@@ -2,7 +2,11 @@
 
 [中文说明](README_CN.md)
 
-GeoAnchor-Net is a supervision-aware porosity prediction model for seismic-driven full-field reconstruction and sparse-well blind-interval prediction. The model combines geological trend construction, structure-conditioned residual allocation, and absolute porosity anchor propagation in one training and inference pipeline.
+GeoAnchor-Net is a supervision-aware conditional framework for seismic porosity prediction under both dense benchmark supervision and sparse field well control. It uses the same model for dense-label full-field reconstruction and sparse-well blind-interval prediction.
+
+The key design is **absolute anchor propagation**, which propagates sparse well observations as porosity values rather than residual corrections. This preserves direct well evidence on the physical property scale when strong low-frequency priors dominate the prediction space. GeoAnchor-Net combines trend construction, structure-conditioned correction, and anchor-consistent refinement to produce porosity predictions under different supervision regimes.
+
+Experiments on a released synthetic benchmark, a public F3 field-data interface, and Seis2Rock-derived transfer splits achieve RMSE values of `0.01938`, `0.01462`, `0.02684`, and `0.02494`. On `OpenPoroBench-S` and `F3 Demo 2023`, GeoAnchor-Net reduces RMSE by `20.87%` and `40.76%` relative to the strongest reproduced comparators.
 
 This repository contains the complete training and evaluation code for GeoAnchor-Net.
 
