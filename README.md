@@ -4,7 +4,7 @@
 
 GeoAnchor-Net is a supervision-aware porosity prediction model for seismic-driven full-field reconstruction and sparse-well blind-interval prediction. The model combines geological trend construction, structure-conditioned residual allocation, and absolute porosity anchor propagation in one training and inference pipeline.
 
-This repository contains only the GeoAnchor-Net training and evaluation code. It does not include dataset download scripts, auxiliary analysis scripts, baseline models, or earlier internal methods.
+This repository contains the complete training and evaluation code for GeoAnchor-Net.
 
 ## Network Overview
 
